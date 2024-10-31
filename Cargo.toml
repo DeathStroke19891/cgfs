@@ -1,0 +1,9 @@
+[package]
+name = "cgfs"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+jpeg-decoder = "0.3"
+minifb = { version = "0.25", features = ["wayland"] }
+num_cpus = "1.16"
