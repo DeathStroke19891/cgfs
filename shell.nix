@@ -8,7 +8,6 @@ pkgs.mkShell
     pkgs.wayland
     pkgs.xorg.libX11
     pkgs.xorg.libXcursor
-    pkgs.pkg-config
     pkgs.rustc
     pkgs.cargo
   ];
