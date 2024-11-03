@@ -258,10 +258,10 @@ fn main() {
         camera: Camera {
             position: Vec3 {
                 x: 0.0,
-                y: -2.0,
-                z: 0.0,
+                y: 2.0,
+                z: -5.0,
             },
-            rotation: Matrix3x3::new(1.0, 0.0, 0.0, 0.0, 0.939692620, 0.3420201433, 0.0, -0.3420201433, 0.939692620),
+            rotation: Matrix3x3::new(1.0, 0.0, 0.0, 0.0, 0.939692620, -0.3420201433, 0.0, 0.3420201433, 0.939692620),
         },
         scene: Scene {
             objects: Vec::new(),
@@ -312,19 +312,19 @@ fn main() {
         }
     );
 
-    //world.scene.objects.push(
-    //    Sphere {
-    //        center: Vec3 {
-    //            x: 0.0,
-    //            y: -5001.0,
-    //            z: 0.0,
-    //        },
-    //        radius: 5000.0,
-    //        color: Rgb::from_ints(255, 255, 0),
-    //        specular: 1000,
-    //        reflective: 0.5,
-    //    }
-    //);
+    world.scene.objects.push(
+        Sphere {
+            center: Vec3 {
+                x: 0.0,
+                y: -5001.0,
+                z: 0.0,
+            },
+            radius: 5000.0,
+            color: Rgb::from_ints(255, 255, 0),
+            specular: 1000,
+            reflective: 0.5,
+        }
+    );
 
     world.scene.lights.push(
         Light::AmbientL(0.2)
