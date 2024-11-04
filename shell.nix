@@ -10,6 +10,7 @@ pkgs.mkShell
     pkgs.xorg.libXcursor
     pkgs.rustc
     pkgs.cargo
+    pkgs.tokei
   ];
   shellHook = ''
     PATH=$PATH:/home/parzival/.cargo/bin
